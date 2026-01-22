@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.UuidGenerator;
 
-@Entity
-@Getter
+@Entity//defines that this class is an entity
+@Getter//sets getters for fields
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+@NoArgsConstructor//sets no args constructor
+@AllArgsConstructor//sets all args constructor
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)//ignores null fields in json response
 @Table(name = "contacts")
 
 public class Contact {
