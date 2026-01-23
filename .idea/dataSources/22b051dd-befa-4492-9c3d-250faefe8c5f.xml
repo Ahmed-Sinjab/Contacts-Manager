@@ -8,7 +8,7 @@
 5||16385|C|G
 5||-9223372036854775808|T|G
 5||16385|T|G</Grants>
-      <IntrospectionStateNumber>777</IntrospectionStateNumber>
+      <IntrospectionStateNumber>784</IntrospectionStateNumber>
       <ServerVersion>18.1</ServerVersion>
       <StartupTime>1768767414</StartupTime>
       <TimeZones>true ACDT
@@ -807,7 +807,7 @@ false Zulu
 14860||10|C|G
 14860||-9223372036854775808|U|G
 14860||10|U|G</Grants>
-      <IntrospectionStateNumber>777</IntrospectionStateNumber>
+      <IntrospectionStateNumber>784</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4323,11 +4323,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>777</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>777</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>777</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>784</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>784</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>784</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-01-20.03:17:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-01-23.04:26:42</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4339,63 +4339,56 @@ false Zulu
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="273" parent="271" name="contacts">
-      <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16396</ObjectId>
-      <StateNumber>769</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <column id="274" parent="272" name="id">
+    <column id="273" parent="272" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="275" parent="272" name="Status">
+    <column id="274" parent="272" name="Status">
       <Position>2</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="272" name="address">
+    <column id="275" parent="272" name="address">
       <Position>3</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="277" parent="272" name="email">
+    <column id="276" parent="272" name="email">
       <Position>4</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="272" name="name">
+    <column id="277" parent="272" name="name">
       <Position>5</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="279" parent="272" name="phone">
+    <column id="278" parent="272" name="phone">
       <Position>6</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="280" parent="272" name="photoUrl">
+    <column id="279" parent="272" name="photoUrl">
       <Position>7</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="272" name="title">
+    <column id="280" parent="272" name="title">
       <Position>8</Position>
       <StateNumber>766</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="282" parent="272" name="contact_pkey">
+    <index id="281" parent="272" name="contact_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16394</ObjectId>
@@ -4407,80 +4400,12 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="283" parent="272" name="contact_pkey">
+    <key id="282" parent="272" name="contact_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16395</ObjectId>
       <Primary>1</Primary>
       <StateNumber>766</StateNumber>
       <UnderlyingIndexId>16394</UnderlyingIndexId>
-    </key>
-    <column id="284" parent="273" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="285" parent="273" name="Status">
-      <Position>2</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="286" parent="273" name="address">
-      <Position>3</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="287" parent="273" name="email">
-      <Position>4</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="288" parent="273" name="name">
-      <Position>5</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="289" parent="273" name="phone">
-      <Position>6</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="290" parent="273" name="photoUrl">
-      <Position>7</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="291" parent="273" name="title">
-      <Position>8</Position>
-      <StateNumber>769</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="292" parent="273" name="contacts_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16402</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>769</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationNames>default</CollationNames>
-      <CollationIds>100</CollationIds>
-      <CollationParentNames>pg_catalog</CollationParentNames>
-    </index>
-    <key id="293" parent="273" name="contacts_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16403</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>769</StateNumber>
-      <UnderlyingIndexId>16402</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
