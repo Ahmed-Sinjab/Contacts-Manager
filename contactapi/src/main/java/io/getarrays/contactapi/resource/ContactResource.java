@@ -33,7 +33,7 @@ import static org.springframework.http.MediaType.IMAGE_PNG_VALUE;
  */
 
 @RestController
-@RequestMapping("/contacts")
+@RequestMapping("contacts")
 @RequiredArgsConstructor
 public class ContactResource {
     private final ContactService contactService;

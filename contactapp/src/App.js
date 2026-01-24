@@ -1,9 +1,26 @@
 import './App.css';
-
+import { useState, useEffect } from 'react';
+import { getContact } from './api/ContactService';
 function App() {
-  return (
+  const[data,setData] = useState({});
+  const[currentPage,setCurrentPage] = useState(0);
+  const getAllContacts = async(page = 0, size = 10) => {
+    try {
+      setCurrentPage(page);
+      const {data} = await getContact(page,size);
+      setData(data);
+      console.log(data);
+    } catch (error) {
+      console.log(error)
+    }
+  }
+    useEffect(() => {
+      getAllContacts();
+    },[]);
+    return (
+  
     <div>
-      hello world
+      
     </div>
   );
 }
