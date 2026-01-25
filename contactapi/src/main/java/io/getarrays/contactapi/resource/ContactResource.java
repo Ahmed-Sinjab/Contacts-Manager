@@ -5,6 +5,7 @@ import io.getarrays.contactapi.service.ContactService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,7 +34,8 @@ import static org.springframework.http.MediaType.IMAGE_PNG_VALUE;
  */
 
 @RestController
-@RequestMapping("contacts")
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@RequestMapping("/api/contacts")
 @RequiredArgsConstructor
 public class ContactResource {
     private final ContactService contactService;
