@@ -19,21 +19,26 @@ function App() {
       console.log(error)
     }
   }
-  
-  const toggleModel = (show) => {}
+
+  const toggleModal = (show) => {console.log("Toggle Modal"); }
 
   useEffect(() => {
       getAllContacts();
     },[]);
     
   return (
-    <div>
-      <Header toggleModel={toggleModel} nbOfContacts={data.totalElements}/>
-      <Routes>
-        <Route path="/" element={<Navigate to="/contacts" />} />  {/* Add this line */}
-        <Route path="/contacts" element={<ContactList data={data} currentPage={currentPage} getAllContacts={getAllContacts}/>} />
-      </Routes>
-    </div>
+    <>
+    
+      <Header toggleModal={toggleModal} nbOfContacts={data.totalElements}/>
+      <main className = "main">
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Navigate to={"/contacts"} />} />
+          <Route path="/api/contacts" element={<ContactList data={data} currentPage={currentPage} getAllContacts={getAllContacts}/>} />
+        </Routes>
+      </div>
+    </main>
+    </>
   );
 }
 
